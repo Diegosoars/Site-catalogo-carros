@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@keyframes color {
+    0%{color: #00285f;}
+    25%{color: ;}
+    50%{color:#ededed;}
+    100%{color:#00285f}
+}
 
 *{
     margin: 0;
@@ -42,9 +48,14 @@ nav{
     justify-content: space-between;
 }
 .brand{
-    font-size: 24px;
+    font-size: 40px;
     color: var(--blue);
     cursor: pointer;
+    animation-name: color;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    
+
 }
 nav ul{
     display: flex;
